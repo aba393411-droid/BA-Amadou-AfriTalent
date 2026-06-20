@@ -1,24 +1,396 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>README.md</title>
- <!-- Bootstrap 5 via CDN : feuille de style -->
- <link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
- <!-- Votre feuille de style personnelle -->
- <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
- <!-- Le contenu de la page sera ajoute ici -->
- <!-- Bootstrap 5 via CDN : script JavaScript -->
- <script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
- <!-- Votre script JavaScript -->
- <script src="js/main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freelance-AfriTalent</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="https://cndjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+</body class="bg-light">
+  <!--Header-->
+    <header>
+         <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-tops">
+ <div class="container">
+ <a class="navbar-brand d-flex
+  align-items-center fw-bold" href="index.html">
+  <img src="images/logo.png" alt="logo AfriTalent" width="70" height="70">
+   <span class="ms-2">AfriTalent</span>
+</a>
+ <button class="navbar-toggler"
+  type="button"
+ data-bs-toggle="collapse"
+ data-bs-target="#navMenu"
+ aria-controls="navMenu"
+ aria-expanded="false"
+ aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+ </button>
+ <div class="collapse navbar-collapse" id="navMenu">
+ <ul class="navbar-nav ms-auto">
+ <li class="nav-item"><a class="nav-link active"
+href="index.html">Accueil</a></li>
+ <li class="nav-item"><a class="nav-link"
+href="freelances.html">Freelances</a></li>
+ <li class="nav-item"><a class="nav-link"
+href="tarifs.html">Tarifs</a></li>
+ <li class="nav-item"><a class="nav-link" href="about.html">A
+propos</a></li>
+ <li class="nav-item"><a class="nav-link"
+href="contact.html">Contact</a></li>
+ <a href="#" class="btn btn-warning btn-lg fw-bold px-4 py-2 ms-lg-4 shadow">
+        Rejoindre AfriTalent
+ </a>
+
+ </ul>
+ </div>
+ </div>
+ </nav>
+</header>
+
+    <section class="container py-5 mt-5">
+<h1 class="text-center mb-4">Nos freelances</h1>
+    <div class="text-center mb-5">
+        
+<button class="btn btn-primary
+filter-btn m-1" data-filter="web">
+    Tous
+</button>
+<button class="btn btn-outline-primary filter-btn m-1 " data-filter="web">
+Developpement Web
+</button>
+<button class="btn btn-outline-primary filter-btn m-1 " data-filter="design">
+Design UI/UX
+</button>
+<button class="btn btn-outline-primary filter-btn m-1 " data-filter="Marketing">
+Marketing
+</button>
+<button class="btn btn-outline-primary 
+filter-btn m-1" data-filter="data">
+Data & IA
+</button>
+</div>
+<div class="row g-4">
+    <div class="col-12 col-mb-6 col-lg-4 freelancer-card" data-category="web">
+        <div class="card h-100 shadow-sm">
+<img src="images/d.jpeg"
+ class="card-img-top"
+  alt="Fatou Ndiaye">
+  <div class="card-body">
+<h4>Fatou Ndiaye</h4>
+<h6 >
+Developpeur web
+</h6>
+<p>
+ <br> spécialosé en HTML <br> ,Css et Javascript
+</p>
+<p>
+    <strong>25 £/h</strong>
+</p>
+<div class="stars">
+   ⭐⭐⭐⭐⭐
+</div>
+<button class="btn btn-warning mt-3">
+      Voir le profil
+</button>
+    
+
+  </div>
+        </div>
+
+    </div>
+
+ <div class="col-12 col-md-6 col-lg-4 freelancer-card" data-category="design">
+        <div class="card h-100 ">
+<img src="images/e.jpeg"
+ class="card-img-top"
+  alt="Mamadou Diop">
+  <div class="card-body">
+<h4>Mamadou Diop</h4>
+<h6>
+    UI/UX Designer
+</h6>
+<p>
+Designer UX/UX <br> passionné par des interfaces modrenes
+</p>
+<p>
+<strong>22 £/h</strong>
+</p>
+<div class="stars">
+   ⭐⭐⭐⭐⭐
+</div>
+
+<button class="btn btn-warning mt-3">
+    Voir le profil
+</button>
+  </div>
+        </div>
+
+    </div>
+ <div class="col-lg-4 col-mb-6 col-12 freelancer-card" data-categorie="Marketing">
+        <div class="card h-100 ">
+<img src="images/f.jpeg"
+  alt="Awa Fall">
+  <div class="card-body">
+<h4>Awa Fall
+</h4>
+<h6 >
+Marketing Digital
+</h6>
+<p>
+Expert en marketing digital et  <br>gestion des réseaux sociaux
+</p>
+<p>
+<strong>20 £/h :</strong>
+</p>
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+<button class="btn btn-warning mt-3">
+    Voir le profil
+</button>
+  </div>
+        </div>
+
+    </div>
+<div class="col-lg-4 col-md-6 col-12 freelancer-caed" data-categorie="data">
+        <div class="card h-100">
+<img src="images/i.jpeg"
+  alt="Ousmane Ba">
+  <div class="card-body">
+<h4>Ousmane Ba</h4>
+<h6 >
+    Data Scientist
+</h6>
+<P >
+Création de logos , affiches et <br>identité vusuelles mosrnes
+</P>
+<p>
+    <strong>35 £/h</strong>
+</p>
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+<button class="btn btn-warning mt-3">
+    Voir le profil
+</button>
+  </div>
+        </div>
+
+    </div>
+    <div class="col-lg-4 col-md-6 col-12 freelancer-caed" data-categorie="web">
+        <div class="card h-100 ">
+<img src="images/j.jpeg"
+  alt="Cheikh Sy">
+  <div class="card-body">
+<h4>Cheikh Sy</h4>
+<h6>
+    Developpeur full stack
+</h6>
+<P>
+Application android & Ios <br>
+avec flutter et react native
+</P>
+<p>
+    <strong>30 £/h</strong>
+</p>
+⭐⭐⭐⭐⭐
+<button class="btn btn-warning mt-3">
+    Voir le profil
+</button>
+  </div>
+        </div>
+
+    </div>
+
+<div class="col-lg-4 col-md-6 col-12 freelancer-caed" data-categorie="design">
+        <div class="card h-100 ">
+<img src="images/k.jpeg"
+  alt="Amina Diallo">
+  <div class="card-body">
+<h4>Amina Diallo</h4>
+<h6 >
+    UX Designer
+</h6>
+<P>
+concepte de parcours <br>
+utilisateurs efficaces.
+</P>
+<p>
+    <strong>24 £/h</strong>
+</p>
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+<button class="btn btn-warning mt-3">
+    Voir le profil
+</button>
+  </div>
+        </div>
+
+    </div>
+<div class="col-lg-4 col-md-6 col-12 freelancer-caed" data-categorie="Marketing">
+        <div class="card h-100">
+<img src="images/l.jpeg"
+  alt="Sokhna Gueye">
+  <div class="card-body">
+<h4>Sokhna Gueye</h4>
+<h6>
+    community manager
+</h6>
+<P>
+Analyser les données et <br>tableaux de bord avec Power BI
+</P>
+<p>
+    <strong>18 £/h</strong>
+</p>
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+<button class="btn btn-warning mt-3">
+    Voir le profil
+</button>
+  </div>
+        </div>
+
+    </div>
+    <div class="col-lg-4 col-md-6 col-12 freelancer-card" data-categorie="data">
+        <div class="card h-100">
+<img src="images/j.jpeg"
+  alt="Ibrahima Sow">
+  <div class="card-body">
+<h4>Ibrahima Sow</h4>
+<h6>
+    Ingénieur IA
+</h6>
+<P >
+Gestion des reseaux sociaux <br> et strategie de communication
+</P>
+<p>
+    <strong>40 £/h</strong>
+</p>
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+<button class="btn btn-warning mt-3">
+    Voir le profil
+</button>
+  </div>
+        </div>
+
+    </div>
+    <div class="col-lg-4 col-md-6 col-12 freelancer-caed" data-categorie="web">
+        <div class="card h-100 ">
+<img src="images/n.jpeg"
+  alt="Cheikh Seck">
+  <div class="crs-body">
+<h4>Cheikh Seck</h4>
+<h6 class=>
+    Développeur Front-End
+</h6>
+<P>
+Developpement d'API REST et <br>
+gestion de base de données
+</P>
+<p>
+    <strong>28 £/h</strong>
+</p>
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+<button class="btn btn-warning mt-3">
+    Voir le profil
+</button>
+  </div>
+        </div>
+</div>
+</div>
+    </section>
+    <section class="footer">
+    <footer class=" footer">
+<div class="container">
+<div class="row g-4">
+<div class="col-12 col-mb-6
+col-lg-3">
+    <img src="images/logo.png" 
+    alt="Logo AfriTalent"
+    width="70"  >
+<h5 class="mt-3">AfriTalent</h5>
+
+<p>
+    AfriTalent est une plateforme qui <br> connecte les freelance africains <br>
+aux entreprises du monde
+</p>
+</div>
+<div class="col-12 col-md-6 col-lg-3">
+    <h4>Liens utiles</h4>
+    <ul class="footer-links">
+        <li>
+    <a href="index.html" class="text-decoration-none text-light"> Accueil</a>
+</li>
+<li>
+    <a href="freelances.html" class="text-decoration-none text-light">freelances</a>
+</li>
+<li>
+    <a href="tarifs.html" class="text-decoration-none text-light">Tarifs</a>
+</li>
+<li>
+    <a href="contact.html" class="text-decoration-none text-light">contact</a>
+</li>
+</ul>
+</div>
+<div class="col-12 col-md-6 col-lg-3">
+    <h4>Ressources</h4>
+    <ul class="list-unstyled">
+<li><a href="#">Blog</a></li>
+<li><a href="#">Tutoriels</a></li>
+<li><a href="#" >FaQ</a></li>
+<li><a href="#">Supports</a></li>
+<li><a href="#" >confidentialité</a></li>
+</ul>
+</div>
+<div class="col-12 col-md-6 col-lg-3">
+    <h4>Contact</h4>
+     <i class="bi bi-envelope-fill"></i>
+    contact@AfriTalent.com
+    </p>
+<p>
+    <i class="bi bi-telephone-fill"></i>
+    +221 77 000 00 00</p>
+<p>
+    <i class="bi bi-geo-alt-fill"></i>
+    Dakar , Sénégal</p>
+    <div class="social-icons">
+<a href="#" ><i class="bi
+     bi-facebook "></i></a>
+<a href="#"> <i class="bi
+     bi-instagram"></i></a>
+<a href="#" ><i class="bi
+     bi-linkedin"></i></a>
+<a href="#"> <i class="bi
+     bi-twitter"></i></a>
+</div>
+</div>
+</div>
+<hr>
+
+<div class="text-center">
+    <p >
+&copy;<span id="year"> </span>
+ AfriTalent . tous droite réservés.
+    </p>
+
+</div>
+</div>
+</footer>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+    
 </body>
 </html>
