@@ -191,3 +191,76 @@ form.reset();
 });
 
 }
+
+const counters = document.querySelectorAll('.counter');
+
+const counterObserver = new IntersectionObserver((entries, observer) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            const counter = entry.target;
+
+            const target = +counter.getAttribute('data-target');
+
+            let current = 0;
+
+            const increment = target / 100;
+
+            const updateCounter = () => {
+
+                if(current < target){
+
+                    current += increment;
+
+                    counter.textContent = Math.ceil(current);
+
+                    requestAnimationFrame(updateCounter);
+
+                }else{
+
+                    counter.textContent = target;
+
+                }
+
+            };
+
+            updateCounter();
+
+            observer.unobserve(counter);
+
+        }
+
+    });
+
+},{
+    threshold:0.5
+});
+
+counters.forEach(counter => {
+    counterObserver.observe(counter);
+});
+const sections = document.querySelectorAll('.fade-section');
+
+const fadeObserver = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add('visible');
+
+        }
+
+    });
+
+},{
+    threshold:0.2
+});
+
+sections.forEach(section=>{
+
+    fadeObserver.observe(section);
+
+});
