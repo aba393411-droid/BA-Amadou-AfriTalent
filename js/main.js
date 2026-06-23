@@ -69,20 +69,125 @@ behavior:"smooth"
 });
 
 });
-const counters=
-document.querySelectorAll(".counter");
-counters.forEach(counter=>{
-    const target=
-    +counter.getAttribute("data-target");
-    const updateCounter =() => {
-        const current =+counter .innerText;
-        const increment = target/100;
-        if(current<target){
-            counter.innerText=Math.ceol(current + increment);
-            setTimeout(updateCounter,20);
-        }else{
-            counter.innerText=target;
-        }
-    };
-    updateCounter();
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+
+const freelancerCards = document.querySelectorAll(".freelancer-card");
+
+filterButtons.forEach(button => {
+
+button.addEventListener("click", () => {
+
+const filter = button.dataset.filter;
+
+freelancerCards.forEach(card => {
+
+const category = card.dataset.category;
+
+if(filter === "all" || category === filter){
+
+card.style.display = "block";
+
+}else{
+
+card.style.display = "none";
+
+}
+
 });
+
+});
+
+});
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+
+const target = +counter.getAttribute("data-target");
+
+const updateCounter = () => {
+
+const current = +counter.innerText;
+
+const increment = target / 100;
+
+if(current < target){
+
+counter.innerText = Math.ceil(current + increment);
+
+setTimeout(updateCounter,20);
+
+}else{
+
+counter.innerText = target;
+
+}
+
+};
+
+updateCounter();
+
+});
+const form = document.getElementById("contactForm");
+
+if(form){
+
+form.addEventListener("submit",(e)=>{
+
+e.preventDefault();
+
+const nom = document.getElementById("nom").value.trim();
+
+const prenom = document.getElementById("prenom").value.trim();
+
+const email = document.getElementById("email").value.trim();
+
+const sujet = document.getElementById("sujet").value;
+
+const message = document.getElementById("message").value.trim();
+
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if(
+
+nom === "" ||
+
+prenom === "" ||
+
+email === "" ||
+
+sujet === "" ||
+
+message === ""
+
+){
+
+alert("Tous les champs sont obligatoires.");
+
+return;
+
+}
+
+if(!emailRegex.test(email)){
+
+alert("Email invalide.");
+
+return;
+
+}
+
+if(message.length < 20){
+
+alert("Le message doit contenir au moins 20 caractères.");
+
+return;
+
+}
+
+alert("Formulaire envoyé avec succès.");
+
+form.reset();
+
+});
+
+}
