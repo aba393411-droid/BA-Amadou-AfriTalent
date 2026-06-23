@@ -1,3 +1,4 @@
+/*dark mode*/
 const themeBtn = document.getElementById("themeToggle");
 
 if(localStorage.getItem("theme") === "dark"){
@@ -69,7 +70,7 @@ behavior:"smooth"
 });
 
 });
-
+/*filtrage*/
 const filterButtons = document.querySelectorAll(".filter-btn");
 
 const freelancerCards = document.querySelectorAll(".freelancer-card");
@@ -99,6 +100,7 @@ card.style.display = "none";
 });
 
 });
+/*compteur animé*/
 const counters = document.querySelectorAll(".counter");
 
 counters.forEach(counter => {
@@ -128,6 +130,7 @@ counter.innerText = target;
 updateCounter();
 
 });
+/*validation*/
 const form = document.getElementById("contactForm");
 
 if(form){
